@@ -3,3 +3,4 @@ FROM project_worker
 JOIN worker ON worker_id =worker.id
 JOIN project ON project_id=project.id
 GROUP BY project_id
+ORDER BY project_id
